@@ -15,6 +15,5 @@ var User = (function () {
 }());
 exports.User = User;
 exports.users = {
-    "luiz@betalabs.com": new User('luiz@betalabs.com', 'Luiz', 'betalabs'),
-    "teste@betalabs.com": new User('teste@betalabs.com', 'Teste', 'betalabs2')
+    "luiz@betalabs.com": new User('luiz@betalabs.com', 'Luiz', 'betalabs')
 };

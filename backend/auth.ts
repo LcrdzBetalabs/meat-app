@@ -7,9 +7,8 @@ import {apiConfig} from './api-config'
 export const handleAuthentication = (req: Request, resp: Response)=>{
   const user: User = req.body
   if(isValid(user)){
-    const dbUser = users[user.email]
-    const token = jwt.sign({sub: dbUser.email, iss: 'meat-api'},
-     apiConfig.secret)
+    const dbUser: User = users[user.email]
+    const token = jwt.sign({sub: dbUser.email, iss: 'meat-api'}, apiConfig.secret)
     resp.json({name: dbUser.name, email: dbUser.email, acessToken: token})
   }else{
     resp.status(403).json({message: 'Dados inválidos.'})
@@ -18,7 +17,7 @@ export const handleAuthentication = (req: Request, resp: Response)=>{
 
 function isValid(user: User): boolean{
   if(!user){
-    return false
+  return false
   }
   const dbUser = users[user.email]
   return dbUser !== undefined && dbUser.matches(user)
