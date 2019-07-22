@@ -479,6 +479,22 @@
         }
       ],
       "id": 8
+    },
+    {
+      "name": "AGORAVAI",
+      "email": "luiz@betalabs.com",
+      "emailConfirmation": "luiz@betalabs.com",
+      "address": "Rua Urussuí",
+      "number": "300",
+      "optionalAddress": "",
+      "paymentsOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "cup-cake"
+        }
+      ],
+      "id": 9
     }
   ]
 }
