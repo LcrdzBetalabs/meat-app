@@ -495,6 +495,22 @@
         }
       ],
       "id": 9
+    },
+    {
+      "name": "Luiz Cardoso",
+      "email": "luiz@betalabs.com",
+      "emailConfirmation": "luiz@betalabs.com",
+      "address": "Rua Carlos Roberto",
+      "number": "194",
+      "optionalAddress": "",
+      "paymentsOption": "MON",
+      "orderItems": [
+        {
+          "quantity": 1,
+          "menuId": "bread"
+        }
+      ],
+      "id": 10
     }
   ]
 }
